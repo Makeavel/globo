@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.gridMenuLateral {
+    background-color: #ffffff;
+    width: 280px;
+    height: 100%;
+    position: fixed;
+    left: -280px;
+}
+
+.gridMenuLateral{
+    float:left;
+    width:280px;
+    overflow-y: auto;
+}
+
+.gridMenuLateral ul{
+    list-style: none;
+}
+
+.gridMenuLateral ul li {
+    color: #000000;
+    line-height: 40px;
+    padding-left: 30px;
+}
+
+.gridMenuLateral.mostra{
+    left: 0px;
+}
+
+.gridMenuLateral.recolhe{
+    left: -280px;
+}
+
+.itensPlataformas li a {
+    font-family: 'Open_Sans';
+    font-size: 20px;
+    text-align: center;
+}
+
+.ImgMenuLateral{
+    cursor: pointer;
+}

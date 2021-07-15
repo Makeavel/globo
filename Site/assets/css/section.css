@@ -1,0 +1,314 @@
+
+#hr1Section {
+    width: 100%;
+    size: 4px;
+    line-height: 4px;
+}
+
+#hr2 {
+    width: 80%;
+    size: 4px;
+    line-height: 4px;
+}
+
+#Noticia {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#Noticia {
+
+    display: flex;
+}
+
+
+/* FlexBox do Globo Esporte horizontal 1 */
+
+.flexGE {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.flexGE{
+    justify-content:center;
+    margin: 38px;
+    
+}
+.flexGE > div figure{
+    flex: 0 1 300px;
+    max-width: 100%;
+    display: block;
+}
+.flexGE img {
+    width: 360px;
+    height: 210px;
+    border-radius: 3px;
+    object-fit: cover;
+    margin-left: 3px;
+}
+.flexGE figure {
+    cursor: pointer;
+}
+
+/* ------------- Texto 1º bloco ------------ 1.1*/
+.txtGE {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 250px;
+}
+.txtGE  {
+    max-width: 100%;
+    background-color: #06aa48;
+    color: #ffffff;
+    display: block;
+    padding: 20px;
+}
+.txtGE {
+    width: 250px;
+    height: 170px;
+    border-radius: 3px;
+}
+#hrFlexGE {
+    width: 15%;
+    size: 4px;
+    box-sizing: inherit;
+}
+#TitleGE{
+    font-weight: bold;
+    font-size: 1rem;
+}
+#flexTextGE3{
+    opacity: 1;
+    font-weight: bold;
+    font-size: .875rem;
+    cursor: pointer;
+}
+/* ------------- Imagens & texto da imagem ------------ 1.2 */
+#container {
+    display: inline-block;
+    position: relative;
+}
+#container figcaption {
+    line-height: 1.2;
+    padding: 20px;
+    
+}
+#container figcaption {  
+    
+    position: absolute;
+    top: 120px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+#container img {
+   
+    background-image: linear-gradient(
+    180deg
+    ,transparent 60%,rgb(25 20 20 / 60%));
+    
+
+}
+.asds {
+    position: absolute;
+background-color: transparent;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+
+}
+/* --- Noticias horizontais 1 linha -> NewLine --- 2 */
+
+.newLine {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 250px;
+}
+.newLine {
+    justify-content: space-between;
+    margin: 38px;
+}
+.newLine {
+    cursor: pointer;
+}
+
+.newLine #noticiaLine img {
+    width: 440px;
+    height: 230px;
+}
+
+.newLine #noticiaLine img {  
+    max-width: 100%;
+    border-radius: 3px;
+    object-fit: cover;/* ajusta a imagem de forma a não perder qualidade na formatação */
+}
+/*
+.newLine {  
+    display: block;
+}
+*/
+
+/* --- "Mãe das flexListNews" --- 3 */
+
+.FlexLists {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 250px;
+}
+
+.FlexLists {
+    justify-content: space-between;
+    margin: 38px;
+}
+
+.FlexLists{
+    cursor: pointer;
+}
+
+/* --- Noticias horizontais Lista G1 --- 3.1 */
+
+.FlexListNewsG1 {
+    display: flex;
+    flex-direction: column wrap;
+    flex-wrap: wrap;
+    width: 420px;
+    height: 230px;
+}
+
+.FlexListNewsG1 {
+    justify-content:flex-start;
+    
+}
+
+#imgG1 {
+    width: 166px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 3px;
+    object-position: center center;
+}
+
+#g1 {
+    color: #ec7d00;
+    justify-content: flex-end;
+}
+
+#G1txt {
+    font-size: 1.3vw;
+    color: #f03018;
+    margin-left: 15px;
+}
+
+/* --- Noticias horizontais Lista Ge --- 3.2 */
+.FlexListNewsGe {
+    display: flex;
+    flex-direction: column wrap;
+    flex-wrap: wrap;
+  
+    width: 420px;
+    height: 230px;
+}
+
+.FlexListNewsGe {
+    justify-content: center;
+    
+}
+
+#imgGe {
+    width: 166px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 3px;
+    object-position: center center;
+}
+
+#Getxt {
+    font-size: 1.3vw;
+    color: #06aa48;
+    margin-left: 15px;
+}
+
+/* --- Noticias horizontais Lista Gshow --- 3.3 */
+.FlexListNewsGshow {
+    display: flex;
+    flex-direction: column wrap;
+    flex-wrap: wrap;
+    justify-content:flex-end;
+    width: 420px;
+    height: 230px;
+}
+
+#imgGs {
+    width: 166px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 3px;
+    object-position: center center;
+}
+
+#Gstxt {
+    font-size: 1.3vw;
+    color: #ec7d00;
+    margin-left: 15px;
+}
+
+/* Noticia horizontal FUTEBOL  + DE OLHO NO G1  4 */
+
+.Flexfutebol {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 38px;
+}
+
+.FlexOlhoG1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 38px;
+}
+
+/* --- GloboPlay + Lista de filmes --- 5 */
+
+.FlexHeaderGp {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.FlexHeaderGp {
+    margin: 38px;
+}
+
+.FlexGp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.FlexGp  img {
+    width: 180px;
+    height: 50px;
+    object-fit: cover;
+}
+
+#txtGp {
+    
+    color: #000000;
+    margin-left: 15px;
+}
+
+/*         Cartaz     5.1  */
+
+.flexCartaz {
+    display: flex;
+    justify-content: space-between;
+    margin: 38px;
+}
+#imgCartaz {   
+    width: 220px;
+    height: 310px;  
+}
+#imgCartaz {
+    border-radius: 3px;
+    cursor: pointer;
+}
