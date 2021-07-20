@@ -1,0 +1,1125 @@
+
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+body,ul,li,p {
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial;
+  }
+
+#avermelhado  {    /* g1 */
+    color: #f03018;
+  }
+#verde  {   /* globo esporte */        
+    color: #06aa48;
+  }
+#marrom {   /* gshow */
+    color: #ec7d00;
+  } 
+#vermelho  {   /* globoplay */
+    color: #fb0234;
+  }
+#azul  {    /* o globo */
+    color: #1e4c9a;
+  }
+
+/*       FONTS          */
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik/Rubik-Black.ttf')format('truetype'),
+    url('../fonts/Rubik/Rubik-BlackItalic.ttf')format('truetype'),
+    url('../fonts/Rubik/Rubik-Bold.ttf')format('truetype'),
+    url('../fonts/Rubik/Rubik-BoldItalic.ttf')format('truetype'),
+    url('../fonts/Rubik/Rubik-ExtraBold.ttf')format('truetype'),
+    url('../fonts/Rubik/Rubik-ExtraBoldItalic.ttf')format('truetype'),
+    url('../fonts/Rubik/Rubik-Italic.ttf')format('truetype'),
+    url('../fonts/Rubik/Rubik-Light.ttf')format('truetype'),
+    url('../fonts/Rubik/Rubik-LightItalic.ttf')format('truetype'),
+    url('../fonts/Rubik/Rubik-Medium.ttf')format('truetype'),
+    url('../fonts/Rubik/Rubik-MediumItalic.ttf')format('truetype'),
+    url('../fonts/Rubik/Rubik-Regular.ttf')format('truetype'),
+    url('../fonts/Rubik/Rubik-SemiBold.ttf')format('truetype'),
+    url('../fonts/Rubik/Rubik-SemiBoldItalic.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+@font-face {
+    font-family: 'Open_Sans';
+    src: url('../fonts/Open_Sans/OpenSans-Bold.ttf')format('truetype'),
+    url('../fonts/Open_Sans/OpenSans-BoldItalic.ttf')format('truetype'),
+    url('../fonts/Open_Sans/OpenSans-ExtraBold.ttf')format('truetype'),
+    url('../fonts/Open_Sans/OpenSans-ExtraBoldItalic.ttf')format('truetype'),
+    url('../fonts/Open_Sans/OpenSans-Italic.ttf')format('truetype'),
+    url('../fonts/Open_Sans/OpenSans-Light.ttf')format('truetype'),
+    url('../fonts/Open_Sans/OpenSans-LightItalic.ttf')format('truetype'),
+    url('../fonts/Open_Sans/OpenSans-Regular.ttf')format('truetype'),
+    url('../fonts/Open_Sans/OpenSans-SemiBold.ttf')format('truetype'),
+    url('../fonts/Open_Sans/OpenSans-SemiBoldItalic.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  
+.gridAuth > a {
+  font-family:"Open_Sans";
+  font-size: 20px;
+  letter-spacing: -.8px;
+  margin-bottom: auto;
+  margin-top: auto;
+  cursor: pointer;
+  text-align: center;
+}
+
+.Portais ul li a {
+    font-family:"Open_Sans";
+    font-size: 20px;
+    letter-spacing: -.8px;
+    margin-bottom: auto;
+    margin-top: auto;
+    text-align: center;
+}
+
+#flexTextGE3 {
+  font-family: 'Open_Sans' ;
+  font-size: small;
+  
+}
+
+
+/*      Menu Lateral     */
+.gridMenuLateral {
+    background-color: #ffffff;
+    width: 280px;
+    height: 100%;
+    position: fixed;
+    left: -280px;
+}
+.gridMenuLateral{
+    float:left;
+    width:280px;
+    overflow-y: auto;
+}
+.gridMenuLateral ul{
+    list-style: none;
+}
+.gridMenuLateral ul li {
+    color: #000000;
+    line-height: 40px;
+    padding-left: 30px;
+}
+
+.gridMenuLateral.mostra{
+    left: 0px;
+}
+
+.gridMenuLateral.recolhe{
+    left: -280px;
+}
+
+.itensPlataformas li a {
+    font-family: 'Open_Sans';
+    font-size: 20px;
+    text-align: center;
+}
+
+.ImgMenuLateral{
+    cursor: pointer;
+    width: 25px;
+    height: 26px;
+}
+
+
+  .header {
+      background-color: #ffffff;
+  }
+  .header {
+      
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+  }
+  
+  #cursorPointer {
+      cursor: pointer;
+  }
+  
+  /* *******************  LeftBar + Logo Globo *********************/
+  .logoBar{
+      background-color: #ffffff;
+      margin: 0px 20px 0px 20px;
+  }
+  
+  .logoBar{
+      
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .logoBar div {
+      display: inline-block;
+  }
+  
+.logoGlobo > img{
+
+    margin-left: 15px;
+}
+
+  /* *******************  PORTAl *********************/
+  .portais nav{
+      display: flex; 
+  }
+  
+  .portais li {
+      margin-left: 10px;
+  }
+  
+  .portais li a{
+      display: block;
+      padding: 10px;
+      text-decoration:none;
+      font-weight: bold;
+  }
+  /* *******************  AUTH *********************/
+  .auth {
+      display: flex;
+      font-size: 14px;
+  }
+  
+  .auth li {
+      margin-left: 10px;
+  }
+  
+  .auth li a {
+      display: block;
+      padding: 10px;
+  }
+  
+  .auth ul {
+      display: none;
+  
+  }
+  
+  .auth .globomail .mostra  {
+      display: block;
+  }
+  
+  #user {
+      cursor:pointer;
+      width:36px;
+      height: 36px;
+  }
+  
+  #glass {
+      width:28px;
+      height: 28px;
+  }
+  
+  #farrow {
+      width:9px;
+      height: 9px;
+  }
+  
+  #hrHeader {
+      size: 3px;
+  }
+  
+
+  #hr1Section {
+    width: 100%;
+    size: 4px;
+    line-height: 4px;
+}
+
+#hr2 {
+    width: 80%;
+    size: 4px;
+    line-height: 4px;
+}
+
+#Noticia {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#Noticia {
+
+    display: flex;
+}
+
+/*  Primeiras Notícias do Site  */
+
+.hrPrincipal{
+    margin: 20px 0px 20px 0px;
+}
+.GridPrincipal{
+    display: grid;
+    grid-template-columns: 1fr .5fr .5fr;
+    margin:40px 38px 0px 38px;
+}
+.FlexColuna1{
+    display: flex;
+    flex-direction: column;
+    color: #c4170c;
+}
+.FlexColuna2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 40px;
+    color: #06aa48;
+}
+.FlexColuna3{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 40px;
+    color: #ec7d00;
+}
+.FontEnunciado{
+    font-size: 21px;
+    font-weight: bold;
+}
+.NoticiaPrincipal{
+    font-size: 52px;
+    font-weight: bold;
+}
+.NoticiaPrincipal2{
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.NoticiaMiniatura{
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+/*   Coluna Vermelha Principal esquerda */
+.FlexRow1Coluna1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.FlexRow2Coluna1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flexImgNoticia{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexImgNoticia img {
+    width: 180px;
+    height: 100px;
+    border-radius: 3px;
+}
+
+/* Coluna 2 do meio verde  */
+.FlexColumColum2 img{
+    border-radius: 3px;
+    height: 130px;
+    width: 230px ;
+}
+
+.FlexColumColum2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* coluna 3 da direita laranja */
+
+.flexColumGShow{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 19px;
+}
+
+.flexColumGShow img {
+    border-radius: 3px;
+    height: 130px;
+    width: 230px ;
+}
+
+.flexColumGE {
+    margin-bottom: 45px;
+}
+
+.FlexColum3 {
+    margin-bottom: 45px;
+}
+
+
+
+
+
+/* FlexBox do Globo Esporte horizontal 1 */
+
+.gridEsporte{
+    margin: 38px;
+    
+}
+
+.flexGE {
+    display: flex;
+    margin: 0 auto;
+}
+.flexGE{
+    justify-content:center;
+    
+}
+.flexGE > div figure{
+    flex: 0 1 300px;
+    max-width: 100%;
+    display: block;
+}
+.flexGE img {
+    width: 310px;
+    height: 190px;
+    border-radius: 3px;
+    object-fit: cover;
+    margin-left: 3px;
+}
+.flexGE figure {
+    cursor: pointer;
+    
+}
+
+/* ------------- Texto 1º bloco ------------ 1.1*/
+.txtGE {
+    flex-wrap: wrap;
+    flex: 0 1 250px;
+}
+.txtGE  {
+    max-width: 100%;
+    background-color: #06aa48;
+    color: #ffffff;
+    display: block;
+    padding: 20px;
+}
+.txtGE {
+    width: 230px;
+    height: 150px;
+    border-radius: 3px;
+}
+#hrFlexGE {
+    width: 15%;
+    size: 4px;
+    box-sizing: inherit;
+}
+#TitleGE{
+    font-weight: bold;
+    font-size: 1rem;
+}
+#flexTextGE3{
+    opacity: 1;
+    font-weight: bold;
+    font-size: .875rem;
+    cursor: pointer;
+}
+/* ------------- Imagens & texto da imagem ------------ 1.2 */
+#container {
+    display: inline-block;
+    position: relative;
+}
+#container figcaption {
+    line-height: 1.2;
+    padding: 20px;
+    
+}
+#container figcaption {  
+    
+    position: absolute;
+    top: 120px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+#container img {
+   
+    background-image: linear-gradient(
+    180deg
+    ,transparent 60%,rgb(25 20 20) / 60%);
+    
+}
+
+/* --- Noticias horizontais 1 linha -> NewLine --- 2 */
+
+.newLine {
+    display: flex;
+    flex: 1 1 250px;
+    gap:10px;
+    white-space:normal;
+}
+.newLine {
+    justify-content: space-between;
+    margin: 38px;
+}
+.newLine {
+    cursor: pointer;
+}
+
+.newLine #noticiaLine img {
+    width: 440px;
+    height: 230px;
+}
+
+.h2NoticiaLine h2 {
+    width: 440px;
+}
+
+
+.newLine #noticiaLine img {  
+    max-width: 100%;
+    border-radius: 3px;
+    object-fit: cover;/* ajusta a imagem de forma a não perder qualidade na formatação */
+}
+/*
+.newLine {  
+    display: block;
+}
+*/
+
+/* --- "Mãe das flexListNews" --- 3 */
+
+.FlexLists {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 250px;
+}
+
+.FlexLists {
+    justify-content: space-between;
+    margin: 38px;
+}
+
+.FlexLists{
+    cursor: pointer;
+}
+
+/* --- Noticias horizontais Lista G1 --- 3.1 */
+
+.FlexListNewsG1 {
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    width: 400px;
+    
+}
+
+.FlexListNewsG1 {
+    justify-content:flex-start;
+    
+}
+
+#imgG1 {
+    width: 166px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 3px;
+    object-position: center center;
+    margin-left: 10px;
+
+}
+
+#g1 {
+    color: #ec7d00;
+    justify-content: flex-end;
+}
+
+#G1txt {
+    font-size: 1.3vw;
+    color: #f03018;
+    margin-left: 15px;
+}
+
+/* --- Noticias horizontais Lista Ge --- 3.2 */
+.FlexListNewsGe {
+    display: flex;
+    flex-direction:  column;
+    flex-wrap: wrap;
+    width: 400px;
+
+}
+
+.FlexListNewsGe {
+    justify-content: center;
+    
+}
+
+#imgGe {
+    width: 166px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 3px;
+    object-position: center center;
+    margin-left: 10px;
+
+}
+
+#Getxt {
+    font-size: 1.3vw;
+    color: #06aa48;
+    margin-left: 15px;
+}
+
+/* --- Noticias horizontais Lista Gshow --- 3.3 */
+.FlexListNewsGshow {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:flex-end;
+    width: 400px;
+    /* height: 230px;   -> Causa de erro */
+}
+
+#imgGs {
+    width: 166px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 3px;
+    object-position: center center;
+    margin-left: 10px;
+
+}
+
+#Gstxt {
+    font-size: 1.3vw;
+    color: #ec7d00;
+    margin-left: 15px;
+}
+
+/* Noticia horizontal FUTEBOL  + DE OLHO NO G1  4 */
+
+.FlexNotHorizontal {
+    margin: 38px;
+}
+.Flexfutebol {
+    display: flex;
+   flex-direction: column;
+}
+.FlexOlhoG1 {
+    display: flex;
+    flex-wrap: wrap; 
+}
+.hrNoticiaHorizontal{
+    width: 100%;
+    size: 4px;
+    line-height: 4px;
+}
+.hrNoticiaHorizontalVermelho {
+    width: 10%;
+    size: 40px;
+    line-height: 20px;
+    background-color: #fb0234;
+}
+.gridVideos {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+   
+}
+.video img{ 
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+    gap: 3px;
+}
+.principal{
+    width: 620px;
+    height: 300px;
+    grid-area: principal;
+}
+.segundo{  
+    width: 300px;
+    height: 150px;
+    grid-area: segundo;
+ 
+}
+.terceiro{
+    width: 300px;
+    height: 150px;
+    grid-area: terceiro;
+  
+}
+.quarto{
+    width: 300px;
+    height: 150px;
+    grid-area: quarto;
+
+}
+.quinto{
+    width: 300px;
+    height: 150px;
+    grid-area: quinto;
+ 
+}
+.gridVideos {
+    grid-template-areas: 
+    "principal  principal segundo terceiro"
+    "principal  principal quarto  quinto" 
+}
+.gridVideos .video{
+    object-fit:cover;
+	
+	border: 1px solid rgb(255, 255, 255);
+}
+.video {
+	background: tomato;
+}
+
+
+.OlhoG1{
+    margin: 38px 38px 38px 38px;
+}
+
+
+
+/* --- GloboPlay + Lista de filmes --- 5 */
+
+.FlexHeaderGp {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.FlexHeaderGp {
+    margin: 38px;
+    gap: 10px;
+}
+
+
+
+.FlexCabecalhoGp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.FlexGp  img {
+    width: 180px;
+    height: 50px;
+    object-fit: cover;
+}
+
+#txtGp {
+    
+    color: #000000;
+    margin-left: 15px;
+}
+
+.FlexGpButton {
+    align-items: center;
+    background-color:#fb0234; 
+    color: #ffffff;
+    padding: 15px;
+    letter-spacing: -.3px;
+    border-radius: 3px;
+    margin: 5px 0px 5px 0px;
+}
+
+/*         Cartaz     5.1  */
+
+.flexCartaz {
+    display: flex;
+    justify-content: space-between;
+    gap: 3px;
+}
+.imgCartaz {   
+    width: 203px;
+    height: 310px;  
+}
+.imgCartaz {
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/*     TECNOLOGIA E GAMES      */
+
+.TecnologiaGames{
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 38px 38px;
+    gap: 10px;
+}
+
+#containerTG a{
+   font-size: 18px;
+   color: #131212;
+   font-weight: bold;
+}
+
+.flexTG {
+    display: flex;
+    margin: 0 auto;
+    gap: 24px;
+}
+
+.flexTG img {
+    width: 290px;
+    height: 150px;
+    border-radius: 3px;
+    object-fit: cover;
+    
+}
+.flexTG{
+    justify-content:space-between;
+  
+}
+.flexTG > div figure{
+    max-width: 100%;
+
+}
+
+.flexTG figure {
+    cursor: pointer;
+}
+
+/*    Valor Investe & Bem estar e Saúde  */
+
+.GridInvesteEstar{
+    display: Grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 38px 38px 38px 38px;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.TituloInveste{
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.TituloBemEstar{
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.imgNoticia{
+    width: 230px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 3px;
+
+}
+
+.noticia{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+  
+}
+
+.hrCabecalho{
+    width: 90%;
+    size: 6px;
+    margin: 0px 0px 0px 20px;
+}
+
+.hrInvesteEstar{
+    width: 90%;
+    size: 6px;
+    margin: 20px 0px 0px 20px;
+}
+
+.Corpo{
+    display: grid;
+}
+
+.noticiasVIBE{
+    margin-left: 10px;
+    margin-right: 25px;
+}
+
+.noticiasVIBE .h3Laranja{
+    color: #ff9f00 ;
+    font-size: 20px;
+}
+
+.noticiasVIBE .h3Azul{
+    color: #00aeef;
+    font-size: 20px;
+}
+
+.noticiasVIBE a{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+/*    Ultimo GSHOW da pag ->Horizontal  */
+
+
+.GshowHorizontal{
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 38px 38px;
+    gap: 10px;
+}
+
+#containerGS a{
+   font-size: 14px;
+   color: #131212;
+   font-weight: bold;
+}
+
+.flexGS {
+    display: flex;
+    margin: 0 auto;
+    gap: 24px;
+}
+
+.flexGS img {
+    width: 290px;
+    height: 140px;
+    border-radius: 3px;
+    object-fit: cover;
+    
+}
+.flexGS{
+    justify-content:space-between;
+  
+}
+.flexGS > div figure{
+    max-width: 100%;
+
+}
+
+.flexGS figure {
+    cursor: pointer;
+}
+
+.h3GSLaranja{
+    color: #ec7d00;
+}
+
+/*      GloboPlay ultima propaganda        */
+
+.FlexGloboPlay{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.FlexGloboPlay img{
+    height: 50px;
+    width: 180px;
+}
+
+.Globoplay{
+    margin: 38px 38px 70px 38px;
+}
+
+
+.flexGp {
+    display: flex;
+    margin: 0 auto;
+}
+.flexGp{
+    justify-content:center;
+    
+}
+.flexGp > div figure{
+    flex: 0 1 300px;
+    max-width: 100%;
+    display: block;
+}
+.flexGp img {
+    width: 410px;
+    height: 220px;
+    border-radius: 3px;
+    object-fit: cover;
+    margin-left: 3px;
+}
+.flexGp figure {
+    cursor: pointer;
+    
+}
+
+#containergp {
+    display: inline-block;
+    position: relative;
+}
+#containergp figcaption {
+    line-height: 1.2;
+    margin: 12px 20px 12px 20px;
+    max-height: 55.6px;
+    overflow: hidden;
+    
+}
+#containergp figcaption {  
+    
+    position: absolute;
+    top: 120px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+#containergp img {
+   
+    background-image: linear-gradient(
+    180deg
+    ,transparent 60%,rgb(25 20 20) / 60%);
+    
+}
+
+
+
+
+
+
+
+
+
+/*      Top GLOBO         */
+
+.TopNoticias{
+    background-color: #f1efef;
+}
+
+.GridTopGlobo{
+    display: Grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 38px 38px 38px 38px;
+    gap: 20px;
+    
+    cursor: pointer;
+}
+
+.tituloTopGlobo{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.TituloTop{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0px 10px 0px 38px;  
+}
+
+.hrTopNoticias{
+    margin: 12px 0px 12px 0px;
+}
+
+.FlexTopNoticia{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.NumTopNoticia{
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+
+.Topvermelho{
+    color: #fb0234;
+    font-size: 18px;
+}
+.Topverde{
+    color: #06aa48;
+    font-size: 18px;
+}
+.Toplaranja{
+    color: #f03018;
+    font-size: 18px;
+}
+
+
+
+
+/*      Footer        */
+
+.GridTopicos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0px 38px 0px 38px;
+}
+
+.TopicosGlobo{
+    background-color: #f1efef;
+}
+
+.FlexTopicos{
+    display: flex;
+    flex-direction: column;
+    margin: 38px 0px 0px 0px;
+    
+    background-color: #333;
+}
+
+.cabecalho{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #4b4b4b;
+}
+
+.cabecalho {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.topicos{
+    font-size: 15px;
+    color: #6d6c6c;
+
+}
+
+.hrVertical{
+    width: 100%;
+    size: 4px;
+    line-height: 4px;
+}
+
+.footerOpcoes{
+    display: flex;
+    flex-direction: row;
+    font-size: .875rem;
+    justify-content: space-between;
+    line-height: 1.36;
+    letter-spacing: -.2px;
+    color: #ffffff;
+    cursor: pointer;
+    
+}
+
+/* linha azul */
+
+.footerAzul{
+    background-color: #1e4c9a;
+}
+
+.logoGloboLine img{
+    width: 160px;
+    height: 70px;
+}
+
+.footerflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6px 38px 30px 38px;
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin: 0px 0px 0px 38px;
+}
+
+.footerlegenda{
+    gap: 10px;
+}
