@@ -545,10 +545,6 @@ input[type="ImgMenuLateral"]:checked ~ gridMenuLateral {
     margin: 38px;
 }
 
-.FlexLists{
-    cursor: pointer;
-}
-
 .FlexQuadroNoticia{
     display: flex;
     flex-direction: column;
@@ -572,6 +568,7 @@ input[type="ImgMenuLateral"]:checked ~ gridMenuLateral {
     color: #333;
     font-size: 12px;
     font-style: bold;
+    cursor: pointer;
 }
 
 .segundaMensagem{
@@ -595,6 +592,7 @@ input[type="ImgMenuLateral"]:checked ~ gridMenuLateral {
     flex-direction: row;
     padding-bottom: 4px;
     margin-bottom: 32px;
+    cursor: pointer;
 }
 
 /* --- Noticias horizontais Lista G1 --- 3.1 */
@@ -614,11 +612,16 @@ input[type="ImgMenuLateral"]:checked ~ gridMenuLateral {
     
 }
 
+#Noticia{
+    cursor: pointer;
+}
+
 .FlexDadosBolsa{
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
+    cursor: pointer;
 }
 
 .Gridmensagem{
@@ -656,6 +659,7 @@ input[type="ImgMenuLateral"]:checked ~ gridMenuLateral {
     height: 40px;
     margin-top: 14px;
     color: #4b4b4b;
+    cursor: pointer;
 }
 
 .TxtAtualizaBolsa{
@@ -734,6 +738,7 @@ input[type="ImgMenuLateral"]:checked ~ gridMenuLateral {
     font-size: 1.3vw;
     color: #06aa48;
     padding-top: 12px;
+    cursor: pointer;
 }
 
 /* --- Noticias horizontais Lista Gshow --- 3.3 */
@@ -770,6 +775,7 @@ input[type="ImgMenuLateral"]:checked ~ gridMenuLateral {
     font-size: 1.3vw;
     color: #ec7d00;
     padding-top: 12px;
+    cursor: pointer;
 }
 
 /* Noticia horizontal FUTEBOL  + DE OLHO NO G1  4 */
@@ -803,38 +809,86 @@ input[type="ImgMenuLateral"]:checked ~ gridMenuLateral {
 }
 .video img{ 
     max-width: 100%;
+    width: 620px;
+    height: 302px;
     object-fit: cover;
     border-radius: 3px;
-    gap: 3px;
 }
+
+.videoBloco img{
+    max-width: 100%;
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.containerVideo{
+        display: inline-block;
+        position: relative;  
+}
+
+.containerVideo figcaption {
+    line-height: 1.2;
+    margin: 12px 20px 12px 20px;
+    max-height: 55.6px;
+    overflow: hidden;
+    
+}
+.containerVideo figcaption {  
+    position: absolute;
+    top: 80px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.containerVideoPrincipal{
+    display: inline-block;
+    position: relative;  
+}
+.containerVideoPrincipal figcaption {
+    line-height: 1.2;
+    margin: 12px 20px 12px 20px;
+    max-height: 55.6px;
+    overflow: hidden;
+    
+}
+.containerVideoPrincipal figcaption {  
+    position: absolute;
+    top: 230px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
 .principal{
     width: 620px;
     height: 300px;
     grid-area: principal;
+    cursor: pointer;
 }
 .segundo{  
     width: 300px;
     height: 150px;
     grid-area: segundo;
- 
+    cursor: pointer;
 }
 .terceiro{
     width: 300px;
     height: 150px;
     grid-area: terceiro;
-  
+    cursor: pointer;
 }
 .quarto{
     width: 300px;
     height: 150px;
     grid-area: quarto;
-
+    cursor: pointer;
 }
 .quinto{
     width: 300px;
     height: 150px;
     grid-area: quinto;
- 
+    cursor: pointer;
 }
 .gridVideos {
     grid-template-areas: 
@@ -843,7 +897,6 @@ input[type="ImgMenuLateral"]:checked ~ gridMenuLateral {
 }
 .gridVideos .video{
     object-fit:cover;
-	
 	border: 1px solid rgb(255, 255, 255);
 }
 .video {
@@ -910,6 +963,7 @@ input[type="ImgMenuLateral"]:checked ~ gridMenuLateral {
     letter-spacing: -.3px;
     border-radius: 3px;
     margin: 5px 0px 5px 0px;
+    cursor: pointer;
 }
 
 /*
@@ -1164,7 +1218,7 @@ input[type="ImgMenuLateral"]:checked ~ gridMenuLateral {
 #containergp figcaption {  
     
     position: absolute;
-    top: 120px;
+    top: 160px;
     font-weight: bold;
     color: rgb(255, 255, 255);
 }
