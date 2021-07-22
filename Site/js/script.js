@@ -1,4 +1,4 @@
-$('.ImgMenuLateral').click(function(){
+/*$('.ImgMenuLateral').click(function(){
     $('.gridMenuLateral').toggleClass('mostra');
 });
 $('.header').click(function(){
@@ -6,4 +6,4 @@ $('.header').click(function(){
 });
 $('.email').click(function(){
     $('.globomail').toggleClass('mostra')
-});
+});  */

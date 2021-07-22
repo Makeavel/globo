@@ -5,53 +5,64 @@
    
     <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
    
-    <script src="https://code.jquery.com/jquery-3.6.0.js" 
+    <!--script src="https://code.jquery.com/jquery-3.6.0.js" 
             integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
             crossorigin="anonymous">
-    </script>
+    </script-->
     <title>globo.com - Absolutamente tudo sobre notícias, esportes e entreterimento</title>
 </head>
 <body>
     
-    <header class ="header">
+    <section class="Cabecalho">
+        <header class ="header">    
+            
+            <div class ="logoBar">
+                <div id= "leftBar">
+                    <div>
+                    <input type="checkbox" id="check">
+                    <label for="check">
+                        <img class="ImgMenuLateral" id="btn" src="../assets/img/icon_menu_lateral.jpg"/>      
+                    </label>
+                        
+                    </div>
+                    
+                </div>
 
-        <div class ="logoBar">
-            <div id= "leftBar">
-                <img class="ImgMenuLateral" src="../assets/img/icon_menu_lateral.jpg"
-                    alt="Image"/>           
+                <div class= "logoGlobo">
+                    <img src="../assets/img/globo_com.png" 
+                    title="globo.com - Absolutamente tudo sobre notícias, esportes e entreterimento"
+                    alt="Image" width="100" height="50" />
+                </div>
+
+                <div class="portais">
+                    <nav>
+                        <li><a id= "avermelhado" href="/">g1</a></li>
+                        <li><a id= "verde" href="/">ge</a></li>
+                        <li><a id= "marrom" href="/">gshow</a></li>
+                        <li><a id= "vermelho" href="/">globoplay</a></li>
+                        <li><a id= "azul" href="/">o globo</a></li>  
+                    </nav>
+                </div>
             </div>
 
-            <div class= "logoGlobo">
-                <img src="../assets/img/globo_com.png" 
-                title="globo.com - Absolutamente tudo sobre notícias, esportes e entreterimento"
-                alt="Image" width="104" height="55" />
+            <div class="auth">
+                <!-- Tem um submenu aqui-->
+                <li><a class="email tpcosAuth" id="cursorPointer">E-MAIL</a>
+                    <nav class="globomail">
+                        <ul>
+                            <li><a href="/">globomail free</a></li>
+                            <li><a href="/">globomail pro</a></li>
+                        </ul>
+                    </nav>
+                </li>   
+                <li><a class="busca tpcosAuth">BUSCA</a></li>
+                    <a><img id="glass" src="../assets/img/glass.png" alt="Image"/></a>
+                <li><a class="conta tpcosAuth" id="cursorPointer">CONTA GLOBO</a></li>
+                    <a><img id="user" src="../assets/img/user.png" alt="Image"/></a>
             </div>
 
-            <div class="portais">
-                <nav>
-                    <li><a id= "avermelhado" href="/">g1</a></li>
-                    <li><a id= "verde" href="/">ge</a></li>
-                    <li><a id= "marrom" href="/">gshow</a></li>
-                    <li><a id= "vermelho" href="/">globoplay</a></li>
-                    <li><a id= "azul" href="/">o globo</a></li>  
-                </nav>
-            </div>
-        </div>
 
-        <div class="auth">
-            <!-- Tem um submenu aqui-->
-            <li><a class="email" id="cursorPointer">E-MAIL</a>
-                <ul class="globomail">
-                    <li><a href="/">globomail free</a></li>
-                    <li><a href="/">globomail pro</a></li>
-                </ul>
-            </li>   
-            <li><a>BUSCA</a></li>
-                <a><img id="glass" src="../assets/img/glass.png" alt="Image"/></a>
-            <li><a id="cursorPointer">CONTA GLOBO</a></li>
-                <a><img id="user" src="../assets/img/user.png" alt="Image"/></a>
-        </div>
-        
+        </header>
         <div class ="gridMenuLateral">
             <ul class="itensLogin">
                 <li><a>acesse sua conta</a></li>
@@ -83,153 +94,151 @@
                 <li><a>princípios editoriais</a></li>
                 <li><a>grupo globo</a></li> 
             </ul>       
-        </div>
-
-    </header>
+        </div>   
+    </section>
     <hr id="hr1"/>
 
     <section class="GridPrincipal">   <!-- Primeiras Notícias do site-->
 
-    <div class="FlexColuna1">
-        <div class="Noticia Principal">
-            <a class="NoticiaPrincipal">Bolsonaro diz que deve vetar fundão de R$ 5,7 bilhões para eleições</a>
-            <ul>
-            <li><a class="NoticiaPrincipal2">Bolsonaro diz não acreditar que voto impresso passará na Câmara</a></li>
-            <li><a class="NoticiaPrincipal2">Apesar de ida ao STF, Bolsonaro volta a atacar TSE e criticar Barroso</a></li>
-        </ul>
-        <hr class="hrPrincipal"/>
-        </div>
-        <div class="FlexRow1Coluna1">
-            <div class="NoticiaP1">
-                <a class="FontEnunciado">Bolsonaro: novo Bolsa será de 'no mínimo R$ 300'</a>
+        <div class="FlexColuna1">
+            <div class="Noticia Principal">
+                <a class="NoticiaPrincipal">Bolsonaro diz que deve vetar fundão de R$ 5,7 bilhões para eleições</a>
                 <ul>
-                    <li><a class="NoticiaMiniatura">Entenda por que bolsas caíram pelo mundo</a></li>
-                </ul>
+                <li><a class="NoticiaPrincipal2">Bolsonaro diz não acreditar que voto impresso passará na Câmara</a></li>
+                <li><a class="NoticiaPrincipal2">Inquérito que apura se Bolsonaro interferiu na PF é prorrogado</a></li>
+            </ul>
+            <hr class="hrPrincipal"/>
             </div>
-            <div class="NoticiaP1">
-                <a class="FontEnunciado">Dias e empresa investigada se falaram 135 vezes</a>
-                <ul>
-                    <li><a class="NoticiaMiniatura">PECs: PDT vai STF contra votações remotas</a></li>
-                </ul>
-            </div>
-            <div class="NoticiaP1">
-                <a class="FontEnunciado">Delta derruba Bovespa e mercados globais</a>
-                <ul>
-                    <li><a class="NoticiaMiniatura">Brasil tem 110 casos da variante delta; 83 no RJ</a></li>
-                </ul>
+            <div class="FlexRow1Coluna1">
+                <div class="NoticiaP1">
+                    <a class="FontEnunciado">Bolsonaro: novo Bolsa será de 'no mínimo R$ 300'</a>
+                    <ul>
+                        <li><a class="NoticiaMiniatura">Branson parabeniza Bezos: 'Impressionante'</a></li>
+                    </ul>
+                </div>
+                <div class="NoticiaP1">
+                    <a class="FontEnunciado">Dias e empresa investigada se falaram 135 vezes</a>
+                    <ul>
+                        <li><a class="NoticiaMiniatura">PECs: PDT vai STF contra votações remotas</a></li>
+                    </ul>
+                </div>
+                <div class="NoticiaP1">
+                    <a class="FontEnunciado">Delta derruba Bovespa e mercados globais</a>
+                    <ul>
+                        <li><a class="NoticiaMiniatura">Brasil tem 110 casos da variante delta; 83 no RJ</a></li>
+                    </ul>
+                    
+                </div>
                 
             </div>
-            
-        </div>
-        <hr class="hrPrincipal"/>
-        <div class="FlexRow2Coluna1">
+            <hr class="hrPrincipal"/>
+            <div class="FlexRow2Coluna1">
 
+                <div class="flexImgNoticia">
+                    <div>
+                        <img src="../assets/img/noticia/tabelasp1.jfif"/>
+                    </div>
+                <div class="NoticiaP1">
+                    <a class="FontEnunciado">SP é 1º estado a ter 50% com pelo menos uma dose</a>
+                    <ul>
+                        <li><a class="NoticiaMiniatura">Média móvel de mortes está em queda há 23 dias</a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="flexImgNoticia">
                 <div>
-                    <img src="../assets/img/noticia/tabelasp1.jfif"/>
+                    <img src="../assets/img/noticia/peruano.jpg"/>
                 </div>
-            <div class="NoticiaP1">
-                <a class="FontEnunciado">SP é 1º estado a ter 50% com pelo menos uma dose</a>
-                <ul>
-                    <li><a class="NoticiaMiniatura">Média móvel de mortes está em queda há 23 dias</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="flexImgNoticia">
-            <div>
-                <img src="../assets/img/noticia/peruano.jpg"/>
-            </div>
-            <div class="NoticiaP1">
-                <a class="FontEnunciado">No Peru, Castillo é declarado presidente eleito</a>
-                <ul>
-                    <li><a class="NoticiaMiniatura">Saiba mais sobre o presidente eleito do Peru</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="flexImgNoticia">
-            <div>
-                <img src="../assets/img/noticia/spcasal.jpg"/>
-            </div>
-            <div class="NoticiaP1">
-                <a class="FontEnunciado">SP: casal e policial são mortos em condomínio</a>
-                <ul>
-                    <li><a class="NoticiaMiniatura">75 cápsulas são achadas ao lado de PM morto</a></li>
-                </ul>
-            </div>   
-        </div>
-
-        </div>
-    </div>
-    <div class="FlexColuna2">
-
-        <div class="FlexColumColum2">
-
-            <div class="flexColumGE">
-                <div>
-                    <img src="../assets/img/noticia/jogadores.jpg" />
-                </div>
-                <div>
-                    <a class="FontEnunciado">Sport vence o América-MG fora de casa e deixa o Z-4</a>
+                <div class="NoticiaP1">
+                    <a class="FontEnunciado">No Peru, Castillo é declarado presidente eleito</a>
+                    <ul>
+                        <li><a class="NoticiaMiniatura">Saiba mais sobre o presidente eleito do Peru</a></li>
+                    </ul>
                 </div>
             </div>
-
-            <div class="flexColumGE">
+            <div class="flexImgNoticia">
                 <div>
-                    <img src="../assets/img/noticia/flamengo.jpg" />
+                    <img src="../assets/img/noticia/spcasal.jpg"/>
+                </div>
+                <div class="NoticiaP1">
+                    <a class="FontEnunciado">SP: casal e policial são mortos em condomínio</a>
+                    <ul>
+                        <li><a class="NoticiaMiniatura">75 cápsulas são achadas ao lado de PM morto</a></li>
+                    </ul>
+                </div>   
+            </div>
+            </div>
+        </div>
+        <hr class="hrPrincipalColum"/>
+        <div class="FlexColuna2">
+
+            <div class="FlexColumColum2">
+
+                <div class="flexColumGE">
+                    <div>
+                        <img src="../assets/img/noticia/jogadores.jpg" />
+                    </div>
+                    <div>
+                        <a class="FontEnunciado">Sport vence o América-MG fora de casa e deixa o Z-4</a>
+                    </div>
+                </div>
+
+                <div class="flexColumGE">
+                    <div>
+                        <img src="../assets/img/noticia/flamengo.jpg" />
+                    </div>
+                    <div>
+                        <a class="FontEnunciado">Fla ganha na Justiça por jogos com torcida</a>
+                    </div>
+                    <ul>
+                        <li><a class="NoticiaMiniatura">Esposa de Thiago Mendes veste mascote de rubro-negro</a></li>
+                    </ul>    
+                </div>
+
+                <div class="flexColumGE">
+                    <div>
+                        <img src="../assets/img/noticia/vasco.jpg" />
+                    </div>
+                    <div>
+                        <a class="FontEnunciado">Vasco demite Cabo e tenta fechar com Lisca</a>
+                    </div>    
+                </div>
+
+            </div>
+
+        </div>
+        <hr class="hrPrincipalColum"/>
+        <div class="FlexColuna3">
+            <div class="flexColumGShow">
+            
+            <div class="FlexColum3">
+                <div>
+                    <img src="../assets/img/noticia/lucas.jpg" />
                 </div>
                 <div>
-                    <a class="FontEnunciado">Fla ganha na Justiça por jogos com torcida</a>
+                    <a class="FontEnunciado">Lucas Lucco celebra reversão completa de harmonização facial</a>
                 </div>
-                <ul>
-                    <li><a class="NoticiaMiniatura">Esposa de Thiago Mendes veste mascote de rubro-negro</a></li>
-                </ul>    
             </div>
-
-            <div class="flexColumGE">
+            <div class="FlexColum3">
                 <div>
-                    <img src="../assets/img/noticia/vasco.jpg" />
+                    <img src="../assets/img/noticia/casamneto.jpg" />
                 </div>
                 <div>
-                    <a class="FontEnunciado">Vasco demite Cabo e tenta fechar com Lisca</a>
-                </div>    
+                    <a class="FontEnunciado">Com Fred, Bianca Andrade publica nova foto do parto de Cris</a>
+                </div>
+            </div>    
+            <div class="FlexColum3">
+                <div>
+                    <img src="../assets/img/noticia/neymarfesta.jpg" />
+                </div>
+                <div>
+                    <a class="FontEnunciado">Neymar faz festão com tema Las Vegas em Balneário Camboriú</a>
+                </div>
             </div>
-
-        </div>
-
-    </div>
-    <div class="FlexColuna3">
-        <div class="flexColumGShow">
-        
-        <div class="FlexColum3">
-            <div>
-                <img src="../assets/img/noticia/lucas.jpg" />
-            </div>
-            <div>
-                <a class="FontEnunciado">Lucas Lucco celebra reversão completa de harmonização facial</a>
             </div>
         </div>
-        <div class="FlexColum3">
-            <div>
-                <img src="../assets/img/noticia/casamneto.jpg" />
-            </div>
-            <div>
-                <a class="FontEnunciado">Com Fred, Bianca Andrade publica nova foto do parto de Cris</a>
-            </div>
-        </div>    
-        <div class="FlexColum3">
-            <div>
-                <img src="../assets/img/noticia/neymarfesta.jpg" />
-            </div>
-            <div>
-                <a class="FontEnunciado">Neymar faz festão com tema Las Vegas em Balneário Camboriú</a>
-            </div>
-        </div>
-        </div>
-    </div>
 
     </section>
-
-
 
     <section class="gridEsporte"> <!-- Grid horizontal de inf. Globo esporte -->
 
@@ -244,19 +253,19 @@
             </div>
             <div id="img">
                 <figure id="container">
-                    <img src="../assets/img/noticia/whatsapp-image-2021-07-13-at-08.56.00-1.jpeg">
+                    <img id="ContainerImg" src="../assets/img/noticia/whatsapp-image-2021-07-13-at-08.56.00-1.jpeg">
                     <figcaption>Técnico do United apoia Rashford após insulto</figcaption>
                 </figure>
             </div>
             <div id="img">
                 <figure id="container">
-                    <img src="../assets/img/noticia/giuliano.jpg">
+                    <img id="ContainerImg" src="../assets/img/noticia/giuliano.jpg">
                     <figcaption>Inter faz proposta e aguarda resposta de Guiliano</figcaption>
                 </figure>
             </div>
             <div id="img">
                 <figure id="container">
-                    <img src="../assets/img/noticia/Tsubasa-cover.jpg">
+                    <img id="ContainerImg" src="../assets/img/noticia/Tsubasa-cover.jpg">
                     <figcaption>Cartoleiro Pro tem 10 ligas para jogar com os amigos</figcaption>
                 </figure>
             </div>
@@ -286,7 +295,7 @@
             
     </section> 
 
-    <section class="FlexLists">
+    <section class="FlexLists">  <!-- Colunas de noticias g1+ge+gshow acima do globoplay-->
             <div>
             <ul class="FlexListNewsG1">
                 <hr id="hr1Section"/>
@@ -341,7 +350,38 @@
                     <h3 id="G1txt">Funcionários se demitem em massa e deixam recado em letreiro nos EUA</h3>
                    
                 </li>
-            
+                <div class="FlexQuadroNoticia quadroG1">
+                    <div class="GridQuadroInterno">  
+
+                      <div class="Gridmensagem">
+                        <div>
+                            <h4 class="primeiraMensagem">IBOVESPA</h4>
+                            <div class="FlexDadosBolsa">
+                                <img class="imgBolsaBova" src="../assets/img/trianguloVerde.png"/>
+                                <h1 class="ValorNum">0,42</h1>  
+                                <h1 class="ValorPercent">%</h1>
+                            </div>
+                            <a class="DescricaoPrimeiraMensagem">125.929pts (+527,89)</a>
+                        </div>
+                        <div>
+                          <h4 class="primeiraMensagem ">MOEDAS</h4>
+                          <li><a class="DescricaoPrimeiraMensagem">Dólar Comercial</a></li>   
+                          <li><a class="DescricaoPrimeiraMensagem">Euro Comercial</a></li>
+                        </div>
+                        <div>
+                          <h4 class="primeiraMensagem">COMPRA</h4>
+                          <li><a class="DescricaoPrimeiraMensagem">R$ 5,190</a></li>   
+                          <li><a class="DescricaoPrimeiraMensagem">R$ 6,124</a></li>
+                        </div>
+                      </div>
+                    </div>
+                      <hr />
+                      <div class="FlexValorEconomico">
+                        <img class="imgRodapéQuadroNoticia" src="../assets/img/economicovalor.png" />
+                        <a class="TxtAtualizaBolsa">atualizado 21/07/2021 17h24</a>
+                      </div>
+                   </div>
+                   <h3 id="G1txtCampo">mais notícias ></h3>
             </ul>  
         </div>
         <div>
@@ -390,7 +430,22 @@
                     <img id="imgGe" src="../assets/img/noticia/volei-desembarque.jpg"/>
                     <h3 id="Getxt" >Seleções de vôlei chegam juntas ao Japão, mas vão para bases separadas</h3>
                 </li>
-                
+                <div class="FlexQuadroNoticia">
+                  <div class="FlexQuadroInterno">  
+                    <div >
+                        <img class="imgGE ImgQuadroNoticia" src="../assets/img/noticia/olimpiada.jfif"/>
+                    </div>
+                    <div class="mensagem">
+                        <a class="primeiraMensagem">PODCASTS DO GE</a>
+                        <h4 class="segundaMensagem Mensagemge">RUMO AO PÓDIO Nº105</h4>
+                        <a class="terceiraMensagem">Os brasileiros com chance de medalha e o clima em Tóquio para os Jogos</a>
+                        
+                    </div>
+                  </div>
+                    <hr />
+                    <h3 id="GetxtCampo">Confira os podcasts do GE ›</h3>
+                 </div>
+                 <h3 id="GetxtCampo">mais notícias ></h3>
             </ul>   
         </div>
         <div>
@@ -438,6 +493,22 @@
                     <img id="imgG1" src="../assets/img/noticia/dd8bb7561b9c7a5a5e36ce06d4e82e3f1626172134_thumb.png"/>
                     <h3 id="Gstxt">Segunda temporada de Demon Slayer: Kimetsu no Yaiba ganha novo vídeo e ilustração promocional</h3>               
                 </li>
+                <div class="FlexQuadroNoticia">
+                    <div class="FlexQuadroInterno">  
+                      <div >
+                          <img class="imgGE ImgQuadroNoticia" src="../assets/img/noticia/obama.jfif"/>
+                      </div>
+                      <div class="mensagem">
+                          <a class="primeiraMensagem">ASTROLOGIA</a>
+                          <h4 class="segundaMensagem Mensagemgs">SIGNO DE LEÃO</h4>
+                          <a class="terceiraMensagem">Tatá Werneck, Caetano, Obama e mais famosos do signo que está chegando</a>
+                          
+                      </div>
+                    </div>
+                      <hr />
+                      <h3 id="GstxtCampo">Ouça podcasts do Gshow ›</h3>
+                   </div>
+                   <h3 id="GstxtCampo">mais notícias ></h3>
             </ul>
         </div>
     </section> 
@@ -510,6 +581,7 @@
 
     <section class="FlexHeaderGp"> <!-- Globoplay + lista de filmes -->
 
+    <div class="CabecalhoGp">    
         <div class="FlexCabecalhoGp">
             <div class="FlexGp">
                 <div>
@@ -519,12 +591,11 @@
             <div>
                 <h3 id="txtGp">Veja o que todo mundo está assistindo</h3>
             </div>
-            <div class="FlexGpButton">
-                <a>Assine agora</a>
-            </div>
         </div>    
-
-
+        <div class="FlexGpButton">
+            <a>Assine agora</a>
+        </div>
+    </div>
 
             <ul class="flexCartaz"> <!-- Cartaz -->
                 <li class="cartazFilme">
@@ -772,6 +843,7 @@
     <section class="TopNoticias" >   <!--  Top Globo Noticias -->
 
         <div class="tituloTopGlobo">
+            <img class="imgTituloTopGlobo" src="../assets/img/Topnoticias.jpg" />
             <div class="TituloTop">TOP GLOBO</div>
             <a class="TituloTopGlobo">tá todo mundo clicando...</a>
         </div>
@@ -929,7 +1001,7 @@
     <footer class="footerAzul">
 
         
-    <section class="TopicosGlobo">   
+    <section class="TopicosGlobo">  <!-- Todos os tópicos da página no rodapé --> 
         <div class="GridTopicos">
 
             <div class="">
@@ -992,7 +1064,7 @@
                     <li class="topicos">Turismo e Viagem</li>
                 </div>
             </div>
-              
+            <hr class="hrPrincipal"/>
             <div class="">
                 <div class="Topicoge">
                     <li class="cabecalho ">Ge</li>
@@ -1030,7 +1102,7 @@
                     <div class="cabecalho ">Dropz</div>
                 </div>
             </div>
-                
+            <hr class="hrPrincipal"/>
             <div class="">
                 <div class="Topicogshow">
                     <li class="cabecalho ">Gshow</li>
@@ -1078,7 +1150,7 @@
                 </div>
                 </div>
             </div>
-                
+            <hr class="hrPrincipal"/>
             <div class="">
                 <div class="Topicogloboplay">
                     <li class="cabecalho ">Globo Play</li>
@@ -1106,7 +1178,7 @@
                     <li class="topicos">Legacies</li>
                 </div>
             </div>
-                
+            <hr class="hrPrincipal"/>
             <div class="">
                 <div class="TopicogrupoGlobo">
                     <li class="cabecalho ">grupo globo</li>
@@ -1138,7 +1210,7 @@
                     <li class="topicos">Fórum Techtudo</li>
                 </div>
             </div>
-                
+            <hr class="hrPrincipal"/> 
             <div class="">
                 <div class="TopicoCanaisGlobo">
                     <li class="cabecalho ">canais globo</li>
