@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
    
     <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/header.css">
    
     <!--script src="https://code.jquery.com/jquery-3.6.0.js" 
             integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
@@ -14,20 +15,80 @@
 <body>
     
     <section class="Cabecalho">
+        <input type="checkbox" id="check">
+        
+        <nav class="ListBarNav">
+            <ul class="itensBarraLateral">    
+                <ul class="itensLogin">
+                    <div class="FlexAcountList">
+                        <div>
+                            <img src="../assets/img/profile_icon_176363.png" />
+                        </div>
+                        <div>   
+                            <h4>acesse sua conta</h4>
+                            <a class="cadastroList">ou cadastre-se grátis</a>
+                        </div>
+                    </div>     
+                </ul> 
+                <hr class="hrListBar" />
+                <ul class="itensPlataformas">
+                    <li><a>g1</a></li>
+                    <li><a>ge</a></li>
+                    <li><a>cartola fc</a></li>
+                    <li><a>gshow</a></li>
+                    <li><a>receitas</a></li>
+                    <li><a>globoplay</a></li>
+                    <li><a>o globo </a></li>
+                    <li><a>dropz </a></li>
+                </ul>    
+                <hr class="hrListBar" />
+                <ul class="itensList">
+                    <li><a>Vitrine globo</a></li>
+                    <li><a>cursos e serviços</a></li>
+                    <li><a>seu time </a></li>
+                    <li><a>campeonatos</a></li>
+                    <li><a>tecnologia </a></li>
+                    <li><a>telejornais</a></li>
+                    <li><a>novelas e programas </a></li>
+                    <li><a>canais globo</a></li>
+                    <li><a>carros </a></li>
+                    <li><a>jornais, revistas e rádios</a></li>
+                </ul>
+                <hr class="hrListBar" />
+                <ul class="itensFooter">
+                    <div class="FlexPrincipios">
+                        <div class="FlexListPrincipio">
+                            <div>
+                                <img src="../assets/img/chat_bubble_conversation_message_icon_153702.png" />
+                            </div>
+                            <div>
+                                <a class="ImgListPrincipios">princípios editoriais</a>
+                            </div>
+                        </div>
+                        <div class="FlexListPrincipioGlobo">
+                            <div>
+                                <img src="../assets/img/logo-globo.png" />
+                            </div>
+                            <div>
+                                <a class="ImgListGlobo">grupo globo</a>
+                            </div>
+                        </div>
+                    </div>
+                </ul>     
+            </ul>
+        </nav>
+        
         <header class ="header">    
             
             <div class ="logoBar">
+                
                 <div id= "leftBar">
                     <div>
-                    <input type="checkbox" id="check">
-                    <label for="check">
-                        <img class="ImgMenuLateral" id="btn" src="../assets/img/icon_menu_lateral.jpg"/>      
-                    </label>
-                        
+                        <label for="check" >
+                            <img class="ImgIconLateral" src="../assets/img/icon_menu_lateral.jpg"/>
+                        </label>
                     </div>
-                    
                 </div>
-
                 <div class= "logoGlobo">
                     <img src="../assets/img/globo_com.png" 
                     title="globo.com - Absolutamente tudo sobre notícias, esportes e entreterimento"
@@ -62,39 +123,6 @@
             </div>
         </header>
 
-
-        <div class ="gridMenuLateral">
-            <ul class="itensLogin">
-                <li><a>acesse sua conta</a></li>
-                <li><a>...</a></li>      
-            </ul> 
-            <ul class="itensPlataformas">
-                <li><a>g1</a></li>
-                <li><a>ge</a></li>
-                <li><a>cartola fc</a></li>
-                <li><a>gshow</a></li>
-                <li><a>receitas</a></li>
-                <li><a>globoplay</a></li>
-                <li><a>o globo </a></li>
-                <li><a>dropz </a></li>
-            </ul>    
-            <ul class="itensList">
-                <li><a>Vitrine globo</a></li>
-                <li><a>cursos e serviços</a></li>
-                <li><a>seu time </a></li>
-                <li><a>campeonatos</a></li>
-                <li><a>tecnologia </a></li>
-                <li><a>telejornais</a></li>
-                <li><a>novelas e programas </a></li>
-                <li><a>canais globo</a></li>
-                <li><a>carros </a></li>
-                <li><a>jornais, revistas e rádios</a></li>
-            </ul>
-            <ul class="itensFooter">
-                <li><a>princípios editoriais</a></li>
-                <li><a>grupo globo</a></li> 
-            </ul>       
-        </div>   
     </section>
     <hr id="hr1"/>
 
@@ -251,9 +279,9 @@
                <h2>As últimas do mundo da bola estão aqui</h2>
                <a id="flexTextGE3">Notícias,tabelas e mais</a>
             </div>
-            <div id="img">
-                <figure id="container">
-                    <img id="ContainerImg" src="../assets/img/noticia/whatsapp-image-2021-07-13-at-08.56.00-1.jpeg">
+            <div id="img " >
+                <figure  id="container">
+                    <img  id="ContainerImg " src="../assets/img/noticia/whatsapp-image-2021-07-13-at-08.56.00-1.jpeg">
                     <figcaption>Técnico do United apoia Rashford após insulto</figcaption>
                 </figure>
             </div>
@@ -275,24 +303,27 @@
 
     <section class="newLine">  <!-- Linha horizontal de notícias & coluna Noticias-->
          
-        
+        <div class="NoticiaLine1">
             <figure id="noticiaLine"> 
-                <img src="../assets/img/noticia/32574273d3b3e482689e34a0a7e08558.png"/>
+                <img src="../assets/img/noticia/gatinha-cracolandia.jpeg"/>
                 <div class="h2NoticiaLine">
-                    <h2 id="avermelhado">Covid: jornalista faz carta para sua esposa instantes antes da morte</h2>
+                    <h2 id="avermelhado">Tráfico bancava luxo da 'Gatinha da Cracolândia', diz delegado</h2>
                 </div>     
-            </figure>   
+            </figure> 
+        </div>
+        <div class="NoticiaLine2">
             <figure id="noticiaLine"> 
                 <img src="../assets/img/noticia/2018-07-06t193403z-1469468290-rc1e01ea61f0-rtrmadp-3-soccer-worldcup-bra-bel-1-.jpg"/>
                 <h2 id="verde">Presidente do Timão confirma contratação de jogador </h2>
-              
+        </div>     
             </figure>
+        <div class="NoticiaLine3">
             <figure id="noticiaLine">
                 <img src="../assets/img/noticia/anime-wallpapers-for-xbox-one_5771919.jpg"/>
                 <h2 id="marrom">Veja x1 entre Kirito e Asuna e o final surpreendente</h2> 
               
             </figure> 
-            
+        </div>  
     </section> 
 
     <section class="FlexLists">  <!-- Colunas de noticias g1+ge+gshow acima do globoplay-->
@@ -524,36 +555,36 @@
 
             <section class="gridVideos">
                 <div class="video principal">
-                    <figure class="containerVideoPrincipal">
-                        <img src="../assets/img/noticia/olimpiadatokyo.jpg" />
+                    <figure class="containerVideoPrincipal FundoEscuropt2" >
+                        <img id="FundoEscuropt1" src="../assets/img/noticia/olimpiadatokyo.jpg" />
                         <figcaption >Atletas testaram positivos para o Covid-19 dentro da Vila Olímpica de Tokyo</figcaption>
                     </figure>
                 </div>
     
                 <div class="videoBloco segundo">
-                    <figure class="containerVideo">
-                        <img src="../assets/img/noticia/mariokart.jpg" />
+                    <figure class="containerVideo FundoEscuropt2" >
+                        <img id="FundoEscuropt1" src="../assets/img/noticia/mariokart.jpg" />
                         <figcaption >Torneio Nacional de Mario Kart</figcaption>
                     </figure>
                 </div>   
     
                 <div class="videoBloco terceiro">
-                    <figure class="containerVideo">
-                        <img src="../assets/img/noticia/cblol.png" />
+                    <figure class="containerVideo FundoEscuropt2" >
+                        <img id="FundoEscuropt1" src="../assets/img/noticia/cblol.png" />
                         <figcaption >Em Breve Segunda Etapa do CBLOL 2021</figcaption>
                     </figure>
                 </div>
     
                 <div class="videoBloco quarto">
-                    <figure class="containerVideo">
-                        <img src="../assets/img/noticia/futebolfeminino.jpeg" />
+                    <figure class="containerVideo FundoEscuropt2" >
+                        <img id="FundoEscuropt1"  src="../assets/img/noticia/futebolfeminino.jpeg" />
                         <figcaption >Futebol Feminino ganha partida olimpica</figcaption>
                     </figure>
                 </div>
     
                 <div class="videoBloco quinto">
-                    <figure class="containerVideo">
-                        <img src="../assets/img/noticia/sdb.jpeg" />
+                    <figure class="containerVideo FundoEscuropt2">
+                        <img id="FundoEscuropt1" src="../assets/img/noticia/sdb.jpeg" />
                         <figcaption >SDB só aceitará kombi a partir de próximo ano</figcaption>
                     </figure>
                 </div>
@@ -572,36 +603,36 @@
 
         <section class="gridVideos">
             <div class="video principal">
-                <figure class="containerVideoPrincipal">
-                    <img src="../assets/img/noticia/EVlIdCLUMAEWDN5 (2).jpg" />
+                <figure class="containerVideoPrincipal FundoEscuropt2" >
+                    <img id="FundoEscuropt1" src="../assets/img/noticia/EVlIdCLUMAEWDN5 (2).jpg" />
                     <figcaption >Testemunha confirma que Aerith estava na cena do crime do 8º distrito</figcaption>
                 </figure>
             </div>
 
             <div class="videoBloco segundo">
-                <figure class="containerVideo">
-                    <img src="../assets/img/noticia/gamepass.jpg" />
+                <figure class="containerVideo FundoEscuropt2" >
+                    <img id="FundoEscuropt1" src="../assets/img/noticia/gamepass.jpg" />
                     <figcaption >GamePass libera jogo extra este mês</figcaption>
                 </figure>
             </div>   
 
             <div class="videoBloco terceiro">
-                <figure class="containerVideo">
-                    <img src="../assets/img/noticia/horizon_hh9d.jpg" />
+                <figure class="containerVideo FundoEscuropt2">
+                    <img id="FundoEscuropt1" src="../assets/img/noticia/horizon_hh9d.jpg" />
                     <figcaption >Em um futuro de máquinas mulher é vista usando arco</figcaption>
                 </figure>
             </div>
 
             <div class="videoBloco quarto">
-                <figure class="containerVideo">
-                    <img src="../assets/img/noticia/truenoInitialD.jpg" />
+                <figure class="containerVideo FundoEscuropt2" >
+                    <img id="FundoEscuropt1" src="../assets/img/noticia/truenoInitialD.jpg" />
                     <figcaption >Hachiroku avistado nas montanhas de akina</figcaption>
                 </figure>
             </div>
 
             <div class="videoBloco quinto">
-                <figure class="containerVideo">
-                    <img src="../assets/img/noticia/aincrad.png" />
+                <figure class="containerVideo FundoEscuropt2">
+                    <img id="FundoEscuropt1" src="../assets/img/noticia/aincrad.png" />
                     <figcaption >VRMMO mantem seus jogadores presos +2 anos</figcaption>
                 </figure>
             </div>
@@ -843,27 +874,31 @@
 
     <section class="Globoplay">  <!-- Ultimo GloboPay da página -->
 
-        <div class="FlexGloboPlay">
-            <img src="../assets/img/globoplay-logo.png" />
+        <div class="FlexGloboPlay"  >
+            <img  src="../assets/img/globoplay-logo.png" />
         </div>
 
         <div class="flexGp">   
-            <div id="imgGp">
-                <figure id="containergp">
-                    <img src="../assets/img/noticia/boruto.png">
+            <div id="imgGp" >
+                <figure id="containergp" class="FundoEscuropt2Gp" >
+                    <img id="FundoEscuropt1Gp" src="../assets/img/noticia/boruto.png">
                     <figcaption>Todas as temporadas de Boruto</figcaption>
                 </figure>
             </div>
             <div id="imgGp">
-                <figure id="containergp">
-                    <img src="../assets/img/noticia/myhero.png">
-                    <figcaption>Novo capítulo toda semana</figcaption>
+                <figure id="containergp" >
+                    <div class="FundoEscuropt2Gp">
+                        <img id="FundoEscuropt1Gp" src="../assets/img/noticia/myhero.png">
+                        <figcaption>Novo capítulo toda semana</figcaption>
+                    </div>
                 </figure>
             </div>
             <div id="imgGp">
                 <figure id="containergp">
-                    <img src="../assets/img/noticia/rezero.png">
-                    <figcaption>Assista à 4º temporada</figcaption>
+                    <div class="FundoEscuropt2Gp">
+                        <img id="FundoEscuropt1Gp" src="../assets/img/noticia/rezero.png">
+                        <figcaption>Assista à 4º temporada</figcaption>
+                    </div>
                 </figure>
             </div>
         </div>
@@ -875,7 +910,7 @@
         <div class="tituloTopGlobo">
             <img class="imgTituloTopGlobo" src="../assets/img/Topnoticias.jpg" />
             <div class="TituloTop">TOP GLOBO</div>
-            <a class="TituloTopGlobo">tá todo mundo clicando...</a>
+            <h4 class="TituloTopGlobo">tá todo mundo clicando...</h4>
         </div>
 
         <div class="GridTopGlobo">
@@ -1032,9 +1067,9 @@
 
         
     <section class="TopicosGlobo">  <!-- Todos os tópicos da página no rodapé --> 
-        <div class="GridTopicos">
+        <div class="GridTopicos">  <!--Tá em Flex-->
 
-            <div class="">
+            <div class="tpico">
                 <div class="Topicog1">
                     <li class="cabecalho ">g1</li>
                     <li class="topicos">Acre</li>
@@ -1095,7 +1130,7 @@
                 </div>
             </div>
             <hr class="hrPrincipal"/>
-            <div class="">
+            <div class="tpico">
                 <div class="Topicoge">
                     <li class="cabecalho ">Ge</li>
                     <li class="topicos"> Atletismo</li>
@@ -1133,7 +1168,7 @@
                 </div>
             </div>
             <hr class="hrPrincipal"/>
-            <div class="">
+            <div class="tpico">
                 <div class="Topicogshow">
                     <li class="cabecalho ">Gshow</li>
                     <li class="topicos">BBB</li>
@@ -1181,7 +1216,7 @@
                 </div>
             </div>
             <hr class="hrPrincipal"/>
-            <div class="">
+            <div class="tpico">
                 <div class="Topicogloboplay">
                     <li class="cabecalho ">Globo Play</li>
                     <li class="topicos">Séries</li>
@@ -1209,7 +1244,7 @@
                 </div>
             </div>
             <hr class="hrPrincipal"/>
-            <div class="">
+            <div class="tpico">
                 <div class="TopicogrupoGlobo">
                     <li class="cabecalho ">grupo globo</li>
                     <li class="topicos">Principios editoriais</li>
@@ -1241,7 +1276,7 @@
                 </div>
             </div>
             <hr class="hrPrincipal"/> 
-            <div class="">
+            <div class="tpico">
                 <div class="TopicoCanaisGlobo">
                     <li class="cabecalho ">canais globo</li>
                     <li class="topicos">BIS</li>

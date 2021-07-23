@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+body{
+    
+    font-family: Arial;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+input[type="checkbox"]{
+    display: none;
+}
+
+label{
+    position: absolute;
+    z-index: 1;  /*faz recolher*/
+}
+
+.ListBarNav{    /*NAV mais externo */
+    width: 280px;
+    height: 100%;
+    left: -280px;
+    position: absolute;
+    transition: all 0.6s;
+    background-color: #ffffff;
+}
+
+.ImgIconLateral{
+    bottom: 40px;
+}
+
+.FlexAcountList{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-right: 20px;
+    margin-bottom: 18px;
+    align-items: flex-start;
+}
+
+.FlexAcountList h4{
+    font-size: 16px;
+}
+
+.cadastroList{
+    color: #1e4c9a;
+    font-size: 12px;
+}
+
+.ListBarNav{
+    height: 100%;
+    overflow-y: auto;
+}
+
+.itensBarraLateral{   /*Ul mais externo */
+    position: absolute;
+    top: 40px;
+    width: 100%;
+}
+
+input[type="checkbox"]:checked ~ .ListBarNav{
+    transform: translateX(280px);
+}
+
+.hrListBar{
+    height: 80%;
+    size: 4px;
+}
+
+.itensLogin a{
+    display: block;
+    cursor: pointer;
+   
+}
+
+.itensLogin img{
+    height: 40px;
+    width: 40px;
+}
+
+.itensPlataformas a{
+    padding: 12px 10px 12px 25px;
+    display: block;
+    font-weight: bold;
+    font-weight:600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.itensList a {
+    padding: 12px 10px 12px 25px;
+    display: block;
+    font-weight:600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.itensFooter a{
+    padding: 12px 10px 12px 5px;
+    display: block;
+    font-size: 14px;
+    cursor: pointer;
+    color: #777777;
+}
+
+.FlexListPrincipio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.FlexListPrincipio img{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
+.FlexListPrincipioGlobo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.FlexListPrincipioGlobo img{
+    cursor: pointer;
+    height: 32px;
+    width: 38px;
+}
+
+.FlexPrincipios{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+#avermelhado  {    /* g1 */
+    color: #c00e08;
+  }
+#verde  {   /* globo esporte */        
+    color: #06aa48;
+  }
+#marrom {   /* gshow */
+    color: #ec7d00;
+  } 
+#vermelho  {   /* globoplay */
+    color: #c00e08;
+  }
+#azul  {    /* o globo */
+    color: #1e4c9a;
+  }
